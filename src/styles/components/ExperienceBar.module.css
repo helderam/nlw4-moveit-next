@@ -1,0 +1,44 @@
+/* CSS MOdels = Nao mistura com outros */
+
+/* Barra de progresso */
+
+.experienceBar {
+    display: flex;
+    align-items: center;
+}
+
+.experienceBar span {
+    font-size: 1rem;
+}
+
+
+/* barra total */
+
+.experienceBar>div {
+    /* largura maxima do container*/
+    flex: 1;
+    height: 4px;
+    border-radius: 4px;
+    background: var(--gray-line);
+    margin: 0 1.5rem;
+    position: relative;
+}
+
+
+/* barra verde menor */
+
+.experienceBar>div>div {
+    height: 4px;
+    border-radius: 4px;
+    background-color: var(--green);
+}
+
+
+/* texto do progresso da barra verde */
+
+span.currentExperience {
+    position: absolute;
+    top: 12px;
+    /* centraliza */
+    transform: translateX(-50%);
+}
