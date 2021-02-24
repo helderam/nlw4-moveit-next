@@ -9,7 +9,6 @@ export function Profile() {
                 <strong> Helder</strong>
                 <p>
                     <img src="icons/level.svg" alt="level">
-                        
                     </img>
                     Level 1
                     </p>
