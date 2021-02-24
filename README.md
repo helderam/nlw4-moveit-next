@@ -1,4 +1,5 @@
 # Moveit
 
-- Aprendendo NLW ROcketseat
+- Aprendendo React com Next.js 
+- NLW ROcketseat
 
