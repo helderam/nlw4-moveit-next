@@ -11,7 +11,6 @@
     font-size: 1rem;
 }
 
-
 /* barra total */
 
 .experienceBar>div {
@@ -24,7 +23,6 @@
     position: relative;
 }
 
-
 /* barra verde menor */
 
 .experienceBar>div>div {
@@ -32,7 +30,6 @@
     border-radius: 4px;
     background-color: var(--green);
 }
-
 
 /* texto do progresso da barra verde */
 

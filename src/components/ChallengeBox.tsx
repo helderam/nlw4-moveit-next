@@ -5,12 +5,13 @@ import { ChallengesContext } from '../contexts/ChallengesContext';
 
 export function ChallengeBox() {
 
-    const { activeChallenge, resetChallenge } = useContext(ChallengesContext)
+    const { activeChallenge, resetChallenge, completeChallenge } = useContext(ChallengesContext)
     //console.log(contextData);
 
     return (
         <div className={styles.challengeBoxContainer}>
-            { activeChallenge ? (
+
+            { activeChallenge && (
                 <div className={styles.challengeActive}>
                     <header> Ganhe {activeChallenge.amount} xp</header>
 
@@ -27,21 +28,26 @@ export function ChallengeBox() {
                         >
                             Falhei
                     </button>
-                        <button className={styles.challengeSucceededButton}>
+                        <button
+                            className={styles.challengeSucceededButton}
+                            onClick={completeChallenge}>
                             Completei
                     </button>
 
                     </footer>
                 </div>
-            ) : (
-                    <div className={styles.challengeNotActive}>
-                        <strong> Finalize um cicle para recerber desafio</strong>
-                        <p>
-                            <img src="icons/level-up.svg" alt="level up" />
+            )}
+
+            { !activeChallenge && (
+                <div className={styles.challengeNotActive}>
+                    <strong> Finalize um cicle para recerber desafio</strong>
+                    <p>
+                        <img src="icons/level-up.svg" alt="level up" />
                             Avance de level completando desafios
                         </p>
-                    </div>
-                )}
+                </div>
+            )}
+
         </div>
     )
 }

@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-
 /* Cores */
 
 :root {
@@ -21,7 +20,6 @@
     --blue-twitter: #2aa9e0;
 }
 
-
 /* quando menor que 1080px - tablet */
 
 @media (max-width: 1080px) {
@@ -29,7 +27,6 @@
         font-size: 93.75%;
     }
 }
-
 
 /* abaixo de tablet - celular */
 
@@ -39,7 +36,6 @@
     }
 }
 
-
 /* so a div dentro (>) do expirience-bar */
 
 body {
@@ -47,10 +43,7 @@ body {
     color: var(--text);
 }
 
-body,
-input,
-textarea,
-button {
+body, input, textarea, button {
     font: 400 1rem "Inter", sans-serif;
 }
 

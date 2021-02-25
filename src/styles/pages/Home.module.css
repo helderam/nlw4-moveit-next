@@ -1,4 +1,3 @@
-
 /* formata o bloco */
 
 .container {
@@ -10,10 +9,11 @@
     flex-direction: column;
 }
 
-.container section{
+.container section {
     flex: 1;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 6.25rem; /* 100 px no desktop */
+    gap: 6.25rem;
+    /* 100 px no desktop */
     align-content: center;
 }
